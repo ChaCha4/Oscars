@@ -1,0 +1,374 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+@font-face{
+    font-family: BebasNeue;
+    src:url(../fonts/BebasNeue-webfont.eot),url(../fonts/BebasNeue-webfont.ttf),url(../fonts/BebasNeue-webfont.woff),url(../fonts/BebasNeue-webfont.svg);
+    }
+@font-face{
+    font-family: ColabThi;
+    src:url(../fonts/ColabThi-webfont.eot),url(../fonts/ColabThi-webfont.ttf),url(../fonts/ColabThi-webfont.woff),url(../fonts/ColabThi-webfont.svg);
+}
+@font-face{
+    font-family: Vera;
+    src:url(../fonts/Vera-webfont.eot),url(../fonts/Vera-webfont.ttf),url(../fonts/Vera-webfont.woff),url(../fonts/Vera-webfont.svg);
+}
+header{
+	background-image: url(../images/buntingFW.png);
+	background-repeat: repeat-x;
+	padding-bottom: 23px;
+	width: 97.8125%;
+	margin:0 auto;
+}
+@keyframes shadow{
+    0%{
+        text-shadow: 0px 0px #fe0208;
+    }
+    100%{
+        text-shadow: 2px 2px 20px #fe0208;
+    }
+}
+@keyframes tremblel{
+    0%{
+        transform:rotate(0deg);
+    }
+    100%{
+        transform:rotate(-5deg);
+    }
+}
+@keyframes trembler{
+    0%{
+        transform:rotate(0deg);
+    }
+    100%{
+        transform:rotate(5deg);
+    }
+}
+@keyframes full{
+    0%{
+        box-shadow: 0px 1px #b9b9b9;
+    }
+    100%{
+        box-shadow: 5px 5px 10px rgba(0,0,0,0.8);    
+    }
+}
+a{
+	text-decoration: none;
+}
+.clearfix:before,
+.clearfix:after {
+    content: "";
+    display: block;
+    clear: both;
+    /*visibility: hidden; 处理兼容*/
+    line-height: 0;
+   /* height: 0;处理兼容*/
+    font-size:0;
+}	
+.container{
+	width: 96%;
+	margin:0 auto;
+	max-width: 960px;
+}
+h1{
+	width: 100%;
+	font-family:BebasNeue;
+	color:#0d0c0c;
+	text-shadow: 1px 1px #dad7d7;
+	line-height: 92px;
+	font-size: 48px;
+	padding-top: 46px;
+	font-weight: normal;
+}
+h1 span{
+	color:#dfdada;
+}
+nav{
+    display: table;
+    width: 100%;
+    background: linear-gradient(#fff,#e3e3e3);
+
+}
+nav ul{
+	
+	display: table-row;
+}
+nav ul li{
+	list-style: none;
+	display: table-cell;
+    text-align: center;
+}
+nav li a{
+	text-decoration: none;
+	line-height: 39px;
+    font-family:BebasNeue ;
+    font-size: 32px;
+}
+nav ul>li:first-child{
+	text-align: left;
+}
+nav ul>li:last-child{
+	text-align: right;
+}
+nav ul>li:nth-child(6) a{
+    text-align: right;
+}
+nav ul>li:nth-child(odd) a{
+    color:#fe0208;
+    text-shadow: -1px -1px #f6b3b4;
+}
+nav ul>li:nth-child(even) a{
+    color:#010001;
+    text-shadow: -1px -1px #adacad;
+}
+nav ul>li a:hover{
+    animation: shadow 0.9s infinite alternate;
+}
+section{
+	width: 100%;
+    padding-bottom: 20px;
+}
+.line{
+	height: 2px;
+	width: 94%;
+	border-top: 1px solid #d6d5d5;
+	border-bottom:1px solid #d6d5d5;
+	margin:0 auto;
+	margin-bottom: 20px;
+}
+aside{
+	width: 23.0208%;
+	float: left;
+	background-image: url(../images/sidebarBg.png);
+	box-shadow:2px 2px 5px #575757; 
+	padding-top: 11px;
+	padding-bottom: 36px;
+	padding-left: 1.0417%;
+	padding-right: 1.0417%;
+	/*max-width: 240px;*/
+}
+aside h3{
+	line-height: 75px;
+    color: #060606;
+    font-size: 27px;
+    font-family: BebasNeue;
+    text-shadow: 1px 1px #bababa;
+    font-weight: normal;
+}
+aside .box1,aside .box2{
+	width: 92.5%;
+	margin:0 auto;
+}
+aside .box1 .left,
+aside .box1 .right,
+aside .box2 .left,
+aside .box2 .right{
+	width: 45.946%;
+}
+aside img{
+	width: 97.059%;
+	margin:0 auto;
+	margin-bottom: 13px;
+}
+aside .box1 .left{
+	float: left;
+}
+aside .box1 .right{
+	float: right;
+}
+aside .box2 .left{
+	float: left;
+}
+aside .box2 .right{
+	float: right;
+}
+aside .box1 .left img{
+	animation: tremblel 1s 2 forwards;
+}
+aside .box2 .left img{
+	animation: tremblel 1s 2 forwards;
+}
+aside .box1 .right img{
+	animation: trembler 1s 2 forwards;
+}
+aside .box2 .right img{
+	animation: trembler 1s 2 forwards;
+}
+.full{
+	display: block;
+    width: 100%;
+    font-size: 22px;
+    line-height: 26px;
+    border-radius: 13px;
+    border: 1px solid #a19e9e;
+    color: #5c5959;
+    font-family: ColabThi;
+    background:linear-gradient(#ddd,#a19e9e);
+    text-align: center;
+    text-shadow: 1px 1px #939292;
+    box-shadow: 2px 2px 5px #b9b9b9;
+}
+.full:hover{
+    animation: full 0.5s alternate forwards;
+}
+article{
+	width: 70.833%;
+	float: right;
+	max-width: 680px;
+}
+article img{
+	float: left;
+	width: 33%;
+	max-width: 202px;
+}
+article h2{
+	line-height:100px;
+    font-size: 102px;
+    color:#0d0c0c;
+    font-family: BebasNeue ;
+    text-shadow: 2px 2px #a7a4a4;
+    margin-top: 23px;
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+article p:nth-child(3){
+	line-height: 52px;
+    font-family:Vera ;
+    color:#757474;
+    font-size: 36px;
+    text-shadow: 2px 2px #dad7d7;
+}
+article p:nth-child(4){
+	line-height: 43px;
+    font-size: 27px;
+    color:#757474;
+    font-family: ColabThi;
+    text-shadow: 1px 1px #dadada;
+    margin-top: 10px;
+}
+article p:nth-child(4) span{
+	font-weight: bold;
+}
+.mobilnav{
+	display: none;
+}
+article a{
+	display: inline-block;
+    float: right;
+    text-decoration: none;
+    width: 58.5294%;/**/
+    line-height:90px;
+    text-align: center;
+    color:#fff;
+    font-family: BebasNeue;
+    font-size: 36px;
+    background:linear-gradient(#f25d62,#ab171b);
+    border-radius: 8px;
+    box-shadow: 2px 2px 5px #989898;
+    margin-right: 53px;
+    margin-top: 23px;
+    transition: all 0.5s;
+    text-shadow: 1px 1px #fff;
+
+}
+article a span{
+    transition: all 0.5s 0.5s;
+}
+article a:hover{
+    color: #000;
+
+}
+article a span:hover{
+    color: #000;
+}
+footer{
+	width:97.8125%;
+	margin:0 auto;
+	background-image: url(../images/buntingFWinvert.png);
+	background-repeat: repeat-x;
+    background-position: bottom;
+	padding-bottom: 43px;
+}
+.iconfont{
+	color:#ccc;
+	line-height: 40px;
+	font-size: 20px;
+}
+footer p{
+    color:#757474;
+    font-size: 14px;
+    font-family: BebasNeue;
+    padding: 32px 0px 58px 0px;
+	text-align: center;
+}
+/*设备视口（手机的物理尺寸）  布局视口（尺寸往往比设备视口大）*/
+@media screen and (max-width: 500px){
+	h1{
+		width: 90%;
+		font-size: 36px;
+		float: left;
+	}
+	.container{
+		width: 100%;
+	}
+	aside{
+		width: 94%;
+		float: none;
+		margin:8px;
+		box-shadow: none;
+	}
+	.line{
+		width: 94%;
+	}
+	article{
+		float: none;
+	}
+	article,nav,section{
+		width: 100%;
+	}
+	article img{
+		width: 30%;
+	}
+	article h2{
+		font-size: 55px;
+		line-height: 60px;
+	}
+	article p:nth-child(3){
+		font-size: 22px;
+		line-height: 30px;
+	}
+	article p:nth-child(4){
+		font-size: 22px;
+		line-height: 30px;
+	}
+	article a{
+		width: 63%;
+		font-size: 26px;
+		line-height: 51px;
+		clear: both;
+		margin:0;
+		margin-right: 5.6%;
+	}
+	.mobilnav{
+		display: block;
+		float: right;
+		margin-top: 80px;
+	}
+	header nav{
+		display: none;
+	}
+	.mobilnav:hover + nav{
+		display: block; 
+		clear:both;
+	}
+	header nav ul,header nav ul li{
+		display: block;
+	}
+	header nav li:first-child,header nav li:last-child{
+		text-align: center;
+	}
+	header nav ul li{
+		border:1px solid #000;
+	}
+}

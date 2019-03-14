@@ -1,0 +1,38 @@
+**简单的静态页面-奥斯卡-响应式**
+
+## 涉及到的知识点
+
+1.自定义字体
+
+2.利用表格样式做导航:好处是可以实现每个格子的宽度随格子内容不同而不同。
+
+前提是**table**项必须有宽度，其他项不需要处理宽度；
+必须使用表格的三级display-----display:table;display:table-row;(ul)display:table-cell(li)
+
+3.CSS3 animate(动画)
+
+定义：
+@keyframes <名字>{
+/*动画帧数*/
+0%{}
+20%{}
+}
+使用：
+animation:动画名 持续时间 速度曲线 次数（数字或infinite）
+
+4.CSS3 转换  transform
+
+**位移**  transform:translate(水平,垂直);
+**旋转**  transform:rotate(deg);中心点默认是盒子最中间
+**缩放**  transform:scale(宽倍数，高倍数); 写一个值的时候意思是宽和高的倍数一样
+
+5.响应式部分用到了媒体查询，因为页面结构会随着屏幕的大小而改变
+
+/* 小屏幕（平板，大于等于 768px） 
+@media (min-width: @screen-sm-min) { ... }*/
+
+/* 中等屏幕（桌面显示器，大于等于 992px） 
+@media (min-width: @screen-md-min) { ... }*/
+
+/* 大屏幕（大桌面显示器，大于等于 1200px） 
+@media (min-width: @screen-lg-min) { ... }
